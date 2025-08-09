@@ -10,8 +10,6 @@ PKGS_TO_INSTALL=(
     @base-graphical
     @hardware-support
     @multimedia
-    @networkmanager-submodules
-    @printing
     @fonts
 
     flatpak
