@@ -14,21 +14,21 @@ PKGS_TO_INSTALL=(
 
     flatpak
     gnome-shell
+    gnome-software
     ptyxis
     nautilus
+    morewaita-icon-theme
     fedora-release-ostree-desktop
 )
 
 PKGS_TO_UNINSTALL=(
+    gnome-classic-session
+    gnome-tour
+    gnome-initial-setup
 )
 
 /ctx/pkg-helper.sh install "${PKGS_TO_INSTALL[@]}"
 # /ctx/pkg-helper.sh uninstall "${PKGS_TO_UNINSTALL[@]}"
-
-# MoreWaita Icons
-echo "Installing MoreWaita"
-git clone https://github.com/somepaulo/MoreWaita.git /tmp/MoreWaita >/dev/null 2>&1 && \
-bash /tmp/MoreWaita/install.sh >/dev/null 2>&1
 
 systemctl set-default graphical.target
 echo "::endgroup::"
