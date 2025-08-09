@@ -7,7 +7,6 @@ set -ouex pipefail
 shopt -s nullglob
 
 PKGS_TO_INSTALL=(
-    @core
     @base-graphical
     @hardware-support
     @multimedia
@@ -20,10 +19,6 @@ PKGS_TO_INSTALL=(
     ptyxis
     nautilus
     fedora-release-ostree-desktop
-
-    avahi
-    nss-mdns
-    abrt
 )
 
 PKGS_TO_UNINSTALL=(
