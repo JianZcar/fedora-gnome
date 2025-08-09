@@ -10,13 +10,11 @@ flatpak remote-add --if-not-exists --system flathub /etc/flatpak/remotes.d/flath
 flatpak remote-modify --system --enable flathub
 
 # For avahi
-getent group avahi >/dev/null || groupadd -r avahi
-getent passwd avahi >/dev/null || useradd -r -g avahi -d /var/run/avahi-daemon -s /sbin/nologin \
-    -c "Avahi mDNS daemon" avahi
+u avahi - "Avahi mDNS daemon" /var/run/avahi-daemon
+g avahi - "Avahi mDNS daemon"
 
 # For abrt
-getent group abrt >/dev/null || groupadd -r abrt
-getent passwd abrt >/dev/null || useradd -r -g abrt -d /etc/abrt -s /sbin/nologin \
-    -c "ABRT user" abrt
+u abrt - "ABRT user" /etc/abrt
+g abrt - "ABRT group"
 
 echo "::endgroup::"
