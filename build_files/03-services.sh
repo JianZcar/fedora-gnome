@@ -13,6 +13,7 @@ disable_services=(
 
 mask_services=(
     systemd-remount-fs.service
+    flatpak-add-fedora-repos.service
 )
 
 user_services=(
