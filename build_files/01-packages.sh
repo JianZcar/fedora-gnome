@@ -30,7 +30,7 @@ PKGS_TO_UNINSTALL=(
 )
 
 /ctx/pkg-helper.sh install "${PKGS_TO_INSTALL[@]}"
-/ctx/pkg-helper.sh uninstall "${PKGS_TO_UNINSTALL[@]}"
+# /ctx/pkg-helper.sh uninstall "${PKGS_TO_UNINSTALL[@]}"
 
 # MoreWaita Icons
 echo "Installing MoreWaita"
