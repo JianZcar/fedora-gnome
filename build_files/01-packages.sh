@@ -15,7 +15,6 @@ PKGS_TO_INSTALL=(
   @printing
   @fonts
   @gnome-desktop
-  @workstation-product
 
   fedora-release-ostree-desktop
 )
