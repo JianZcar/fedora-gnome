@@ -7,27 +7,26 @@ set -ouex pipefail
 shopt -s nullglob
 
 PKGS_TO_INSTALL=(
-  @core
-  @base-graphical
-  @hardware-support
-  @multimedia
-  @networkmanager-submodules
-  @printing
-  @fonts
-  @gnome-desktop
+    @core
+    @base-graphical
+    @hardware-support
+    @multimedia
+    @networkmanager-submodules
+    @printing
+    @fonts
 
-  fedora-release-ostree-desktop
+    flatpak
+    gnome-shell
+    ptyxis
+    nautilus
+    fedora-release-ostree-desktop
+
+    avahi
+    nss-mdns
+    abrt
 )
 
 PKGS_TO_UNINSTALL=(
-  gnome-classic-session
-  gnome-tour
-  gnome-extensions-app
-  gnome-system-monitor
-  gnome-initial-setup
-  gnome-browser-connector
-  gnome-shell-extension-background-logo
-  gnome-shell-extension-apps-menu
 )
 
 /ctx/pkg-helper.sh install "${PKGS_TO_INSTALL[@]}"
