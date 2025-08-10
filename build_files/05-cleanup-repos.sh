@@ -2,7 +2,7 @@
 
 echo "::group:: ===$(basename "$0")==="
 
-set -euxo pipefail
+set -ouex pipefail
 
 DISABLE_REPOS=(
 )
@@ -13,6 +13,7 @@ done
 
 COPRS_TO_DISABLE=(
     trixieua/morewaita-icon-theme
+    che/nerd-fonts
 )
 
 for copr in "${COPRS_TO_DISABLE[@]}"; do

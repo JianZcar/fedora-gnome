@@ -11,6 +11,7 @@ dnf5 -y install dnf5-plugins
 
 COPRS=(
     trixieua/morewaita-icon-theme
+    che/nerd-fonts
 )
 
 for COPR in "${COPRS[@]}"; do

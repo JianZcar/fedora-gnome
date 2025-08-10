@@ -2,7 +2,7 @@
 
 echo "::group:: ===$(basename "$0")==="
 
-set -euxo pipefail
+set -ouex pipefail
 
 dnf5 clean all
 rm -rf /tmp/* || true
