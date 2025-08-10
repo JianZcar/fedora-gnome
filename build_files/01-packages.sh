@@ -42,8 +42,8 @@ GNOME_EXTS_TO_INSTALL=(
     window-centering@hnjjhmtr27
 )
 
-/ctx/pkg-ctl.sh install "${PKGS_TO_INSTALL[@]}"
-/ctx/pkg-ctl.sh uninstall "${PKGS_TO_UNINSTALL[@]}"
+/ctx/helper/pkg-ctl.sh install "${PKGS_TO_INSTALL[@]}"
+/ctx/helper/pkg-ctl.sh uninstall "${PKGS_TO_UNINSTALL[@]}"
 
 git clone https://github.com/JianZcar/light-shell-plus.git /usr/share/gnome-shell/extensions/light-shell-plus@jianzcar.github \
   && rm -rf /usr/share/gnome-shell/extensions/light-shell-plus@jianzcar.github/.git
@@ -53,7 +53,7 @@ git clone https://github.com/JianZcar/static-bg.git /usr/share/gnome-shell/exten
   && rm -rf /usr/share/gnome-shell/extensions/static-bg@jianzcar.github/.git
 
 for ext in "${GNOME_EXTS_TO_INSTALL[@]}"; do
-  /ctx/install-gnome-extension.sh "$ext"
+  /ctx/helper/install-gnome-extension.sh "$ext"
 done
 
 systemctl set-default graphical.target

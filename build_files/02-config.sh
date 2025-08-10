@@ -4,7 +4,7 @@ echo "::group:: ===$(basename "$0")==="
 
 set -ouex pipefail
 
-/ctx/config-apply.sh
+/ctx/helper/config-apply.sh
 
 sed -i 's/#UserspaceHID.*/UserspaceHID=true/' /etc/bluetooth/input.conf
 sed -i 's/^#SCX_FLAGS=/SCX_FLAGS=/' /etc/default/scx
