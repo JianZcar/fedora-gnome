@@ -15,6 +15,8 @@ g avahi - "Avahi mDNS daemon"
 
 u abrt - "ABRT user" /etc/abrt
 g abrt - "ABRT group"
+
+u wsdd - "WSDD service user" /var/lib/wsdd
 EOF
 
 echo "::endgroup::"
