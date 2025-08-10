@@ -9,7 +9,7 @@ echo "Default=true" | tee -a /etc/flatpak/remotes.d/flathub.flatpakrepo > /dev/n
 flatpak remote-add --if-not-exists --system flathub /etc/flatpak/remotes.d/flathub.flatpakrepo
 flatpak remote-modify --system --enable flathub
 
-RUN cat > /usr/lib/sysusers.d/sysusers-custom-avahi-abrt.conf << EOF
+cat > /usr/lib/sysusers.d/sysusers-custom-avahi-abrt.conf << EOF
 u avahi - "Avahi mDNS daemon" /var/run/avahi-daemon
 g avahi - "Avahi mDNS daemon"
 
