@@ -7,7 +7,6 @@ set -ouex pipefail
 /ctx/helper/config-apply.sh
 
 sed -i 's/#UserspaceHID.*/UserspaceHID=true/' /etc/bluetooth/input.conf
-sed -i 's/^#SCX_FLAGS=/SCX_FLAGS=/' /etc/default/scx
 
 curl -Lo /etc/flatpak/remotes.d/flathub.flatpakrepo https://dl.flathub.org/repo/flathub.flatpakrepo && \
 echo "Default=true" | tee -a /etc/flatpak/remotes.d/flathub.flatpakrepo > /dev/null
