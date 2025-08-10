@@ -21,6 +21,8 @@ PKGS_TO_INSTALL=(
     nautilus
     morewaita-icon-theme
     fedora-release-ostree-desktop
+
+    nerd-fonts
 )
 
 PKGS_TO_UNINSTALL=(

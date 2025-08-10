@@ -1,4 +1,3 @@
-
 - gschema:
     id: org.gnome.shell
     filename: zz0-00-extensions.gschema.override
