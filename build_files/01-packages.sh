@@ -13,7 +13,9 @@ PKGS_TO_INSTALL=(
     @fonts
 
     git
+    yq
     unzip
+
     flatpak
     gnome-shell
     gnome-software
