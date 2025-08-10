@@ -13,6 +13,7 @@ PKGS_TO_INSTALL=(
     @fonts
 
     git
+    unzip
     flatpak
     gnome-shell
     gnome-software
