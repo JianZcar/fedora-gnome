@@ -19,20 +19,9 @@ mask_services=(
 user_services=(
 )
 
-for service in "${services[@]}"; do
-  systemctl enable "$service"
-done
-
-for service in "${disable_services[@]}"; do
-  systemctl disable "$service"
-done
-
-for service in "${mask_services[@]}"; do
-  systemctl mask "$service"
-done
-
-for service in "${user_services[@]}"; do
-  systemctl --global enable "$service"
-done
+systemctl enable "${services[@]}"
+# systemctl disable "${disable_services[@]}"
+systemctl mask "${mask_services[@]}"
+# systemctl --global enable "${user_services[@]}"
 
 echo "::endgroup::"

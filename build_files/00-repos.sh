@@ -14,11 +14,7 @@ COPRS=(
     che/nerd-fonts
 )
 
-for COPR in "${COPRS[@]}"; do
-    echo "Enabling copr: $COPR"
-    dnf5 -y copr enable "$COPR"
-done
-unset COPR
+dnf5 -y copr enable "${COPRS[@]}"
 
 # Install RPMFusion repos
 dnf5 -y install \
