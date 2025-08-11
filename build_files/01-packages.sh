@@ -48,7 +48,7 @@ GNOME_EXTS_TO_INSTALL=(
 )
 
 dnf5 -y install "${PKGS_TO_INSTALL[@]}"
-dnf5 -y uninstall "${PKGS_TO_UNINSTALL[@]}"
+dnf5 -y remove "${PKGS_TO_UNINSTALL[@]}"
 
 git clone https://github.com/JianZcar/light-shell-plus.git /usr/share/gnome-shell/extensions/light-shell-plus@jianzcar.github \
   && rm -rf /usr/share/gnome-shell/extensions/light-shell-plus@jianzcar.github/.git
