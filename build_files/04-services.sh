@@ -14,6 +14,8 @@ disable_services=(
 mask_services=(
     systemd-remount-fs.service
     flatpak-add-fedora-repos.service
+    bootc-fetch-apply-updates.service
+    bootc-fetch-apply-updates.timer
 )
 
 user_services=(
