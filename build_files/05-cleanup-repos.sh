@@ -16,6 +16,8 @@ COPRS_TO_DISABLE=(
     che/nerd-fonts
 )
 
-dnf5 -y copr disable "${COPRS_TO_DISABLE[@]}"
+for copr in "${COPRS_TO_DISABLE[@]}"; do
+    dnf5 -y copr disable "$copr"
+done
 
 echo "::endgroup::"
