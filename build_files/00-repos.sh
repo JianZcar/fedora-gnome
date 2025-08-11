@@ -10,12 +10,14 @@ mkdir -p /var/roothome
 dnf5 -y install dnf5-plugins
 
 COPRS=(
-    fedora-$(rpm -E %fedora)-$(uname -m)
     trixieua/morewaita-icon-theme
     che/nerd-fonts
 )
 
-dnf5 -y copr enable "${COPRS[@]}"
+for COPR in  do
+    echo "Enabling copr: $COPR"
+    dnf5 -y copr enable "$COPR"
+done
 
 # Install RPMFusion repos
 dnf5 -y install \
