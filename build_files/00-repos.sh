@@ -10,6 +10,7 @@ mkdir -p /var/roothome
 dnf5 -y install dnf5-plugins
 
 COPRS=(
+    fedora-$(rpm -E %fedora)-$(uname -m)
     trixieua/morewaita-icon-theme
     che/nerd-fonts
 )
