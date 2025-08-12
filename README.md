@@ -1,6 +1,6 @@
 # Fedora Gnome 
 
-This contain a minimal Fedora with the Gnome DE
+This contains a minimal Fedora installation with the GNOME desktop environment. The image is highly opinionated and tailored specifically for my hardware and computer setup.
 
 > ⚠️ **This image is for my personal use and not intended for general public use. Use at your own risk!**
 
