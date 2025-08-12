@@ -6,6 +6,8 @@ set -ouex pipefail
 
 /ctx/helper/config-apply.sh
 
+sed -i 's/^#AutomaticUpdatePolicy=none/AutomaticUpdatePolicy=stage/' /etc/rpm-ostreed.conf
+sed -i 's/^#LockLayering=false/LockLayering=true/' /etc/rpm-ostreed.conf
 sed -i 's/#UserspaceHID.*/UserspaceHID=true/' /etc/bluetooth/input.conf
 
 curl -Lo /etc/flatpak/remotes.d/flathub.flatpakrepo https://dl.flathub.org/repo/flathub.flatpakrepo && \
