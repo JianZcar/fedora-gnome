@@ -25,6 +25,7 @@ PKGS_TO_INSTALL=(
     fedora-release-ostree-desktop
 
     nerd-fonts
+    wl-copy
 )
 
 PKGS_TO_UNINSTALL=(
