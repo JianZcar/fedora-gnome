@@ -151,13 +151,3 @@
     g abrt - "ABRT group"
 
     u wsdd - "WSDD service user" /var/lib/wsdd
-
-- path: /usr/lib/bootc/kargs.d/01-mem-sleep.toml
-  content: |
-    kargs = ["mem_sleep_default=deep"]
-    match-architectures = ["x86_64"]
-
-- path: /etc/udev/rules.d/01-usb-wakeup.rules
-  content: |
-    ACTION=="add", SUBSYSTEM=="usb", ATTR{bInterfaceClass}=="03", ATTR{power/wakeup}="enabled"
-    ACTION=="change", SUBSYSTEM=="usb", ATTR{bInterfaceClass}=="03", ATTR{power/wakeup}="enabled"
