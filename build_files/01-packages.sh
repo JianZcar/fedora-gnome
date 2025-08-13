@@ -15,15 +15,17 @@ PKGS_TO_INSTALL=(
     git
     yq
     unzip
-
+    
+    fedora-release-ostree-desktop
     flatpak
+    
     gnome-shell
     gnome-software
     ptyxis
     nautilus
     morewaita-icon-theme
-    fedora-release-ostree-desktop
-
+    adw-gtk3-theme
+    
     nerd-fonts
     wl-copy
 )
