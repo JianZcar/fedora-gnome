@@ -25,4 +25,6 @@ g abrt - "ABRT group"
 u wsdd - "WSDD service user" /var/lib/wsdd
 EOF
 
+rpm-ostree kargs --append=mem_sleep_default=deep
+
 echo "::endgroup::"
