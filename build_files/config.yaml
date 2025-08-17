@@ -15,9 +15,7 @@
         - splashindicator@ochi12.github.com
         - wireless-hid@chlumskyvaclav.gmail.com
         - window-centering@hnjjhmtr27
-        - light-shell-plus@jianzcar.github
-        - peek-top-bar@jianzcar.github
-        - static-bg@jianzcar.github
+        - zena-shell@jianzcar.github
 
 - gschema:
     id: org.gnome.desktop.interface

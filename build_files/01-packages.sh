@@ -53,12 +53,8 @@ GNOME_EXTS_TO_INSTALL=(
 dnf5 -y install "${PKGS_TO_INSTALL[@]}"
 dnf5 -y remove "${PKGS_TO_UNINSTALL[@]}"
 
-git clone https://github.com/JianZcar/light-shell-plus.git /usr/share/gnome-shell/extensions/light-shell-plus@jianzcar.github \
-  && rm -rf /usr/share/gnome-shell/extensions/light-shell-plus@jianzcar.github/.git
-git clone https://github.com/JianZcar/peek-top-bar.git /usr/share/gnome-shell/extensions/peek-top-bar@jianzcar.github \
-  && rm -rf /usr/share/gnome-shell/extensions/peek-top-bar@jianzcar.github/.git
-git clone https://github.com/JianZcar/static-bg.git /usr/share/gnome-shell/extensions/static-bg@jianzcar.github \
-  && rm -rf /usr/share/gnome-shell/extensions/static-bg@jianzcar.github/.git
+git clone https://github.com/JianZcar/zena-shell-gnome.git /usr/share/gnome-shell/extensions/zena-shell@jianzcar.github \
+  && rm -rf /usr/share/gnome-shell/extensions/zena-shell@jianzcar.github/.git
 
 for ext in "${GNOME_EXTS_TO_INSTALL[@]}"; do
   /ctx/helper/install-gnome-extension.sh "$ext"
