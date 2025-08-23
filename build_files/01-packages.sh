@@ -12,6 +12,8 @@ PKGS_TO_INSTALL=(
     @multimedia
     @fonts
 
+    zram-generator-defaults
+
     git
     yq
     unzip
