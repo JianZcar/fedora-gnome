@@ -16,6 +16,8 @@ mask_services=(
     flatpak-add-fedora-repos.service
     bootc-fetch-apply-updates.service
     bootc-fetch-apply-updates.timer
+    rpm-ostree-countme.service
+    rpm-ostree-countme.timer
 )
 
 user_services=(
