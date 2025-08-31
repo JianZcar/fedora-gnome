@@ -29,6 +29,7 @@ PKGS_TO_INSTALL=(
     adw-gtk3-theme
     
     nerd-fonts
+    jetbrains-mono-fonts
     wl-copy
 )
 
