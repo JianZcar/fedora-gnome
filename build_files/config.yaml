@@ -27,6 +27,7 @@
       clock-format: '12h'
       clock-show-seconds: true
       enable-hot-corners: false
+      monospace-font-name: 'JetBrains Mono 11'
 
 - gschema:
     id: org.gnome.desktop.sound
