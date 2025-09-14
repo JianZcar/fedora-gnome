@@ -48,8 +48,17 @@
       accel-profile: 'flat'
 
 - gschema:
+    id: org.gnome.desktop.peripherals.touchpad
+    filename: zz0-05-touchpad.gschema.override
+    settings:
+      click-method: 'default'
+      send-events: 'disabled-on-external-mouse'
+      tap-and-drag-lock: true
+      two-finger-scrolling-enabled: false
+
+- gschema:
     id: org.gnome.Ptyxis
-    filename: zz0-05-ptyxis.gschema.override
+    filename: zz0-06-ptyxis.gschema.override
     settings:
       interface-style: 'system'
       restore-session: false
@@ -117,7 +126,7 @@
     [org/gnome/desktop/app-folders/folders/Utilities]
     name='Utilities'
     categories=['Utility']
-    
+
     [org/gnome/desktop/app-folders/folders/Wine]
     name='Wine'
     categories=['X-Wine']
