@@ -55,6 +55,7 @@
       send-events: 'disabled-on-external-mouse'
       tap-and-drag-lock: true
       two-finger-scrolling-enabled: false
+      edge-scrolling-enabled: true
 
 - gschema:
     id: org.gnome.Ptyxis
