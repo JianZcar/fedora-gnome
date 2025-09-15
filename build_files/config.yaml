@@ -52,7 +52,6 @@
     filename: zz0-05-touchpad.gschema.override
     settings:
       click-method: 'default'
-      send-events: 'disabled-on-external-mouse'
       tap-and-drag-lock: true
       two-finger-scrolling-enabled: false
       edge-scrolling-enabled: true
