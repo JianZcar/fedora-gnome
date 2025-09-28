@@ -18,6 +18,8 @@ mask_services=(
     bootc-fetch-apply-updates.timer
     rpm-ostree-countme.service
     rpm-ostree-countme.timer
+    logrotate.service
+    logrotate.timer
 )
 
 user_services=(
