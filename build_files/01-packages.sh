@@ -32,11 +32,9 @@ PKGS_TO_INSTALL=(
     jetbrains-mono-fonts
     wl-copy
 
-    mtp-tools
+    libmtp
     mtpfs
-    libmtp-common
-    gvfs-backends
-    gvfs-fuse
+    gvfs-mtp
 )
 
 PKGS_TO_UNINSTALL=(
