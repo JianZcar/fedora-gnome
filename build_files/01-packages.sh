@@ -31,6 +31,12 @@ PKGS_TO_INSTALL=(
     nerd-fonts
     jetbrains-mono-fonts
     wl-copy
+
+    mtp-tools
+    mtpfs
+    libmtp-common
+    gvfs-backends
+    gvfs-fuse
 )
 
 PKGS_TO_UNINSTALL=(
