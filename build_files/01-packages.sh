@@ -33,8 +33,8 @@ PKGS_TO_INSTALL=(
     wl-copy
 
     libmtp
-    simple-mtpfs
-    gvfs-mtp
+    gvfs-mtp 
+    gvfs-gphoto2
 )
 
 PKGS_TO_UNINSTALL=(
