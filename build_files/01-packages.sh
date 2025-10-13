@@ -33,7 +33,7 @@ PKGS_TO_INSTALL=(
     wl-copy
 
     libmtp
-    mtpfs
+    simple-mtpfs
     gvfs-mtp
 )
 
