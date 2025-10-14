@@ -32,6 +32,8 @@ PKGS_TO_INSTALL=(
     jetbrains-mono-fonts
     wl-copy
 
+    ffmpegthumbnailer
+    
     libmtp
     gvfs-mtp 
     gvfs-gphoto2
