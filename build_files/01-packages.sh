@@ -17,25 +17,25 @@ PKGS_TO_INSTALL=(
     git
     yq
     unzip
-    
+
     fedora-release-ostree-desktop
     flatpak
-    
+
     gnome-shell
     gnome-software
     ptyxis
     nautilus
     morewaita-icon-theme
     adw-gtk3-theme
-    
+
     nerd-fonts
     jetbrains-mono-fonts
     wl-copy
 
     ffmpegthumbnailer
-    
+
     libmtp
-    gvfs-mtp 
+    gvfs-mtp
     gvfs-gphoto2
 )
 
@@ -56,7 +56,6 @@ GNOME_EXTS_TO_INSTALL=(
     ideapad@laurento.frittella
     just-perfection-desktop@just-perfection
     splashindicator@ochi12.github.com
-    window-centering@hnjjhmtr27
 )
 
 dnf5 -y install "${PKGS_TO_INSTALL[@]}"
